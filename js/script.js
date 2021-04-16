@@ -213,7 +213,7 @@ function reset() {
 
 function restorePreviousCountdown() {
     // Get countdown from LocalStorage
-        countdownDate = '2021-06-09';
+        countdownDate = '2021-06-10';
         nameVal1 = 'Yanky';
         nameVal2 = 'Shima';
         countdownValue = new Date(countdownDate).getTime();
