@@ -213,11 +213,9 @@ function reset() {
 
 function restorePreviousCountdown() {
     // Get countdown from LocalStorage
-    if (localStorage.getItem('countdown')) {
-        const savedCountdown = JSON.parse(localStorage.getItem('countdown'));
-        countdownDate = savedCountdown.date;
-        nameVal1 = savedCountdown.name1;
-        nameVal2 = savedCountdown.name2;
+        countdownDate = '2021-06-09';
+        nameVal1 = 'Yanky';
+        nameVal2 = 'Shima';
         countdownValue = new Date(countdownDate).getTime();
         countdownActive = setInterval(() => {
             populateNumbers();
@@ -225,9 +223,7 @@ function restorePreviousCountdown() {
             setDateString();
             completeUI();
         }, 1000);
-    } else {
-        countdownForm.style.display = 'block';
-    }
+   
 }
 
 restorePreviousCountdown();
