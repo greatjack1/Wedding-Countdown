@@ -14,11 +14,11 @@ const dateEl = document.getElementById('date');
 const timeElements = document.querySelectorAll('.countdown__number');
 
 
-let countdownDate = '';
+let countdownDate = '2021-06-09';
 let countdownValue = Date;
 let countdownActive;
-let nameVal1 = '';
-let nameVal2 = '';
+let nameVal1 = 'Yanky';
+let nameVal2 = 'Shima';
 
 // SET DATE INPUT MIN WITH TODAY'S DATE
 const today = new Date().toISOString().split('T')[0];
